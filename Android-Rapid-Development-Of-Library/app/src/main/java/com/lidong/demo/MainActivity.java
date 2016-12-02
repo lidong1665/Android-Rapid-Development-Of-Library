@@ -62,7 +62,7 @@ public class MainActivity extends BaseActivity implements SwichLayoutInterFace,B
         setEnterSwichLayout();
         // SDK初始化，第三方程序启动时，都要进行SDK初始化工作
         Log.d("GetuiSdkDemo", "initializing sdk...");
-        PushManager.getInstance().initialize(this.getApplicationContext());
+//        PushManager.getInstance().initialize(this.getApplicationContext());
         //初始化友盟在线参数
         initUmeng();
         getUmengParamAndFix();

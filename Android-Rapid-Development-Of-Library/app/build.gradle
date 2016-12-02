@@ -15,14 +15,14 @@ buildscript {
 android {
     signingConfigs {
         config {
-            storeFile file('/Users/lidong/AndroidStudioProjects/AndroidRapidLibrary/Android-Rapid-Development-Of-Library/app/android_ripid_lib.jks')
+            storeFile file('/Users/kuaX/AndroidRapidLibrary/Android-Rapid-Development-Of-Library/app/android_ripid_lib.jks')
             keyAlias 'android_ripid_lib'
             keyPassword '325106ld'
             storePassword '325106'
         }
     }
-    compileSdkVersion 23
-    buildToolsVersion '23.0.3'
+    compileSdkVersion 25
+    buildToolsVersion '25.0.1'
     dexOptions {
         incremental true
         javaMaxHeapSize "4g"
@@ -75,6 +75,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile project(':android_library')
+    //noinspection GradleCompatible
     compile 'com.android.support:appcompat-v7:23.2.1'
     compile 'com.android.support:design:23.2.1'
     //个推
@@ -96,6 +97,6 @@ dependencies {
     compile 'com.github.arimorty:floatingsearchview:1.1.2'
     compile files('libs/locSDK_6.13.jar')
     compile 'com.android.support:multidex:1.0.1'
-//    compile 'io.realm:realm-android:0.84.1'
+    //    compile 'io.realm:realm-android:0.84.1'
     compile 'com.github.mzule.fantasyslide:library:1.0.4'
 }
