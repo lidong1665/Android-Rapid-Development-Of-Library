@@ -185,7 +185,7 @@ public class GetuiSdkDemoActivity extends AppCompatActivity implements OnClickLi
                 Log.d("GetuiSdkDemo", "reinitializing sdk...");
 
                 // 重新初始化sdk
-                PushManager.getInstance().initialize(this.getApplicationContext());
+//                PushManager.getInstance().initialize(this.getApplicationContext());
 
                 // UI更新
                 serviceBtn.setText(getResources().getString(R.string.stop));
